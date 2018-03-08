@@ -17,6 +17,9 @@ public class Main {
     public static void main(String[] args) {
         
         Aluno aluno = new Aluno("Tiago Wolker", "ADS", 201710885);
+        Aluno aluno2 = new Aluno();
+        aluno2.setCurso("ADS");
+        aluno2.setMatricula(111111);
         
         System.out.println("Olá " + aluno.getNome() + ","
                 + "\nCurso: " + aluno.getCurso()

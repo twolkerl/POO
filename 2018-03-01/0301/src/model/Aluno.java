@@ -44,5 +44,12 @@ public class Aluno {
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
+
+    public String toString() {
+        return "Aluno{"
+                + "nome=" + nome 
+                + ", curso=" + curso
+                + ", matricula=" + matricula + '}';
+    }
     
 }
