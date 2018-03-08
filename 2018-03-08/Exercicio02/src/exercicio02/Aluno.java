@@ -1,12 +1,14 @@
 package exercicio02;
 
+import java.util.Objects;
+
 /**
  * Classe com os dados de aluno.
  *
  * @author <a href="mailto:tiago.wolker.leite@gmail.com">Tiago Wolker Leite</a>
  */
 public class Aluno {
-    
+
     private String nome;
     private double nota;
 
@@ -38,21 +40,19 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "aluno=" + nome + ", nota=" + nota + '}';
     }
-    
-    public String imprimirDadosFormatado(Aluno aluno) {
-        String mensagem;
-        
-        mensagem = aluno.getNome();
-        mensagem.concat("   ");
-        
-        if (aluno.getNota() == 10) {
-            mensagem.concat("DEZ");
-        } else {
-            mensagem.concat(String.valueOf(aluno.getNota()));
+
+    public void imprimirDadosFormatado(Aluno aluno) {
+
+        if (Objects.nonNull(aluno)) {
+            System.out.print(aluno.getNome() + "\t\t");
+
+            if (aluno.getNota() == 10) {
+                System.out.println("DEZ");
+            } else {
+                System.out.println(aluno.getNota());
+            }
         }
-        
-        return mensagem;
-        
+
     }
-    
+
 }
