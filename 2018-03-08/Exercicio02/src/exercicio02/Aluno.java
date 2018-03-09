@@ -41,18 +41,25 @@ public class Aluno {
         return "Aluno{" + "aluno=" + nome + ", nota=" + nota + '}';
     }
 
+    /**
+     * Método que imprime formatado os dados do aluno em tela.
+     *
+     * @param aluno {@link Aluno} com os dados para serem impressos.
+     */
     public void imprimirDadosFormatado(Aluno aluno) {
 
-        if (Objects.nonNull(aluno)) {
+        if (Objects.nonNull(aluno)) { // Verifica se o objeto não está nulo.
+            
+            // Imprime o nome
             System.out.print(aluno.getNome() + "\t\t");
 
-            if (aluno.getNota() == 10) {
+            if (aluno.getNota() == 10) { // Verifica se a nota é igual a dez.
+                // Caso seja, imprime a seguinte String.
                 System.out.println("DEZ");
             } else {
+                // Caso não seja, será impresso o valor da variável nota.
                 System.out.println(aluno.getNota());
             }
         }
-
     }
-
 }

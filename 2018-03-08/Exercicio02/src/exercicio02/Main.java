@@ -39,7 +39,7 @@ public class Main {
     /**
      * Método que popula a lista de alunos.
      * 
-     * @param alunos Lista de alunos a ser populada.
+     * @param alunos Lista de {@link Aluno} a ser populada.
      */
     private static void popularLista(List<Aluno> alunos) {
         alunos.add(new Aluno("ALINE", 9.0));
