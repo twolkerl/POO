@@ -10,11 +10,11 @@ public class MathUtil {
     private static final double PORCENTAGEM = 0.01;
     
     /**
-     * Método para calcular o desconto aplicado na compra.
+     * Método para calcular o desconto aplicado no valor.
      *
-     * @param valor Valor total da compra.
+     * @param valor Valor total a ser aplicado o desconto.
      * @param porcentagemDesconto Porcentagem de desconto. Ex.: 10 (10%)
-     * @return Valor total a pagar com o desconto aplicado.
+     * @return Valor final com o desconto aplicado.
      */
     public static double calcularDesconto(double valor,
             double porcentagemDesconto) {
